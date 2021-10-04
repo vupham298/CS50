@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Google</title>
+    <link rel="icon" href="./image/google-icon.png" sizes="14x14">
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <script src="https://use.fontawesome.com/3e46b9d8cf.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top-seach-page">
+        <a href="./image-search.html">Image Search</a>
+        <a href="./advanced-search.html">Advanced Search</a>
+    </div>
+
+    <div class="logo">
+        <a href="./index.html">
+            <img src="./image/google-logo.png" alt="google-logo" loading="lazy">
+        </a>
+    </div>
+
+    <div class="search-area">
+        <!-- https://google.com/search -->
+        <form action="" method="GET">
+            <div class="search-bar">
+                <span class="search-icon"> <i class="fa fa-search"></i></span>
+                <input type="text" name="q" id="search-text">
+            </div>
+
+            <div class="search-btn">
+                <button type="submit" id="searchbtn">Google Search</button>
+                <button type="button" id="luckybtn">I'm feeling lucky</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- JS -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            let _s = $("#search-text").val();
+
+            $("#searchbtn").click(function() {
+                alert(_s);
+            });
+        })
+    </script>
+</body>
+
+</html>

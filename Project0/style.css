@@ -1,0 +1,21 @@
+html {
+    font-size: 16px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Main Search Page */
+
+.top-search-bar {
+    display: flex;
+    justify-items: flex-end;
+    margin: 15px 20px;
+}
