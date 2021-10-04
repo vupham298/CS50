@@ -14,8 +14,55 @@ a:hover {
 
 /* Main Search Page */
 
-.top-search-bar {
+.top-search-page {
     display: flex;
-    justify-items: flex-end;
-    margin: 15px 20px;
+    justify-content: flex-end;
+    margin: 15px;
+}
+
+.top-search-page a {
+    margin-left: 15px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.search-area {
+    display: flex;
+    justify-content: center;
+}
+
+.search-area .search-bar {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    width: 500px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.search-icon {
+    margin-left: 5px;
+    color: #ccc;
+}
+
+#search-text {
+    width: 450px;
+    border: none;
+    padding-left: 10px;
+    background-color: #fff;
+}
+
+#search-text:focus {
+    outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
